@@ -5,3 +5,4 @@ Instrucciones:
 2._Ejecutar en consola polymer serve
 3._Ir a la dirección 
 ![image](https://user-images.githubusercontent.com/76792770/127070015-e172d679-3207-41cf-9338-def1e784be2d.png)
+![image](https://user-images.githubusercontent.com/76792770/127211770-cecbbe20-05c3-40fb-8abc-693f29cccd7a.png)
