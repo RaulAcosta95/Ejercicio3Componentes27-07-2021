@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding:0;
+}
+#componenteMenu{
+    background-color: rgb(220, 220, 220);
+    width: 25vw;
+    height: 87vh;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    float:left;
+    box-shadow: inset 1px 0 1px 1px rgb(0, 0, 0);
+}
+#componenteMenu a{
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+}
+#componenteMenu a:hover{
+    text-decoration:underline;
+    cursor:pointer;
+}
+@media(max-width:440px){
+    #componenteMenu{
+        position:fixed;
+        width: 100vw;
+        height: 12vh;
+        flex-wrap: nowrap;
+    }
+    #componenteMenu a{
+        font-weight: bold;
+        font-size: 20px;
+    }
+}

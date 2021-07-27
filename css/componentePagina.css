@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+}
+#componentePagina{
+    background-color: rgb(255, 255, 255);
+    width: 75vw;
+    height: 87vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: inset 1px 0 1px 1px rgb(0, 0, 0);
+    font-size: 20px;
+}
+#componentePagina p{
+    width: 100%;
+}
+@media(max-width:440px){
+    #componentePagina{
+        width: 100vw;
+
+    }
+}

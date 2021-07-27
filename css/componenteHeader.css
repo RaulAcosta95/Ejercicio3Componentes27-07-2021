@@ -1,0 +1,16 @@
+#componenteHeader{
+    background-color: rgb(189, 192, 191);
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: solid black;
+    border-left: none;
+    border-right: none;
+}
+*{
+    margin:0;
+    padding:0;
+}
