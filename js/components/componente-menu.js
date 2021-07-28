@@ -25,47 +25,19 @@ export class ComponenteMenu extends LitElement{
         `
     }
     cambiarAPagina1(){
-        let pagina = this.shadowRoot.getElementById('pagina');
-        
-        let pagina1 = this.shadowRoot.querySelector('componente-pagina1');
-        let pagina2 = this.shadowRoot.querySelector('componente-pagina2');
-        let pagina3 = this.shadowRoot.querySelector('componente-pagina3');
-        if(pagina1){
-            pagina.removeChild(pagina1);
-        }
-        if(pagina2){
-            pagina.removeChild(pagina2);
-        }
-        if(pagina3){
-            pagina.removeChild(pagina3);
-        }
-        pagina.innerHTML="<componente-pagina1></componente-pagina1>";
+        this.removeAll().innerHTML="<componente-pagina1></componente-pagina1>";
     }
     cambiarAPagina2(){
-        let pagina = this.shadowRoot.getElementById('pagina');
-        
-        let pagina1 = this.shadowRoot.querySelector('componente-pagina1');
-        let pagina2 = this.shadowRoot.querySelector('componente-pagina2');
-        let pagina3 = this.shadowRoot.querySelector('componente-pagina3');
-
-        if(pagina1){
-            pagina.removeChild(pagina1);
-        }
-        if(pagina2){
-            pagina.removeChild(pagina2);
-        }
-        if(pagina3){
-            pagina.removeChild(pagina3);
-        }
-        pagina.innerHTML="<componente-pagina2></componente-pagina2>";
+        this.removeAll().innerHTML="<componente-pagina2></componente-pagina2>";
     }
     cambiarAPagina3(){
+        this.removeAll().innerHTML="<componente-pagina3></componente-pagina3>";
+    }
+    removeAll(){
         let pagina = this.shadowRoot.getElementById('pagina');
-        
         let pagina1 = this.shadowRoot.querySelector('componente-pagina1');
         let pagina2 = this.shadowRoot.querySelector('componente-pagina2');
         let pagina3 = this.shadowRoot.querySelector('componente-pagina3');
-
         if(pagina1){
             pagina.removeChild(pagina1);
         }
@@ -75,7 +47,7 @@ export class ComponenteMenu extends LitElement{
         if(pagina3){
             pagina.removeChild(pagina3);
         }
-        pagina.innerHTML="<componente-pagina3></componente-pagina3>";
+        return pagina;
     }
 }
 customElements.define('componente-menu', ComponenteMenu);
